@@ -1,11 +1,7 @@
 name: CI
 
 on:
-  # Run on all pushes and on all pull requests.
-  push:
-  pull_request:
-  # Allow manually triggering the workflow.
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   test:
